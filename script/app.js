@@ -32,6 +32,6 @@ btnPause.onclick = function () {
   btnPause.classList.toggle('is-paused')
 };
 
-btnFast.onclick = () => tl.timeScale(2)
+btnFast.onclick = () => tl.timeScale(3)
 btnNormal.onclick = () => tl.timeScale(1)
 btnSlow.onclick = () => tl.timeScale(.5)
