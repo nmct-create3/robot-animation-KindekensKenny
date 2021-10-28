@@ -29,7 +29,7 @@ var btnSlow = document.querySelector('.js-slow');
 
 btnPause.onclick = function () {
   tl.paused(!tl.paused());
-  // btnPause.classList.toggle('is-paused')
+  btnPause.classList.toggle('is-paused')
 };
 
 btnFast.onclick = () => tl.timeScale(2)

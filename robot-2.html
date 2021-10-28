@@ -52,19 +52,30 @@
 				<path d="M5.5 3v9m4-9v9" stroke="currentColor"></path>
 			</svg>
 		</button>
-
 		<ul class="o-list-reset c-controls__list">
 			<li>
-				<input class="c-controls__radio js-fast" type="radio" id="speedFast" name="speed" />
-				<label class="c-controls__button" for="speedFast">Fast</label>
+				<input class="o-hide-accessible c-controls__radio js-fast" type="radio" id="speedFast" name="speed" />
+				<label class="c-controls__button" for="speedFast">
+					<span class="c-custom-controls--button__fake-input">
+						Fast
+					</span>
+				</label>
 			</li>
 			<li>
-				<input class="c-controls__radio js-normal" type="radio" id="speedNormal" name="speed" checked />
-				<label class="c-controls__button" for="speedNormal">Normal</label>
+				<input class="o-hide-accessible c-controls__radio js-normal" type="radio" id="speedNormal" name="speed" checked />
+				<label class="c-controls__button" for="speedNormal">
+					<span class="c-custom-controls--button__fake-input">
+						Normal
+					</span>					
+				</label>
 			</li>
 			<li>
-				<input class="c-controls__radio js-slow" type="radio" id="speedSlow" name="speed" />
-				<label class="c-controls__button" for="speedSlow">Slow</label>
+				<input class="o-hide-accessible c-controls__radio js-slow" type="radio" id="speedSlow" name="speed" />
+				<label class="c-controls__button" for="speedSlow">
+					<span class="c-custom-controls--button__fake-input">
+						Slow
+					</span>
+				</label>
 			</li>
 		</ul>
 	</div>

@@ -53,6 +53,9 @@ body {
   background: var(--global-html-backgroundColor);
 }
 
+div + .c-controls {
+  display: none;
+}
 /*
 * Remove text-shadow in selection highlight:
 * https://twitter.com/miketaylr/status/12228805301
@@ -189,6 +192,73 @@ body {
 /*
     Component: Controls
 */
+
+.c-controls {
+  display: inline;
+}
+
+.c-controls__radio {
+  
+}
+
+.c-controls__button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    
+}
+
+.c-custom-controls--button__fake-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 32px;
+  margin-right: 8px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: #3385ff4d, 0;
+  transition: border .1s ease-out, box-shadow .1s ease-out;
+}
+
+.c-controls__list {
+  
+}
+
+.c-controls__button--pause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: #3385ff4d, 0;
+  transition: border .1s ease-out, box-shadow .1s ease-out;
+}
+
+/*
+    Component: Play
+*/
+
+.c-play-icon--play {
+  display: none;
+}
+
+.c-play-icon--pause{
+  display: block;
+}
+
+.is-paused > .c-play-icon--play{
+    display: block;
+}
+
+.is-paused > .c-play-icon--pause{
+  display: none;
+}
 
 /*------------------------------------*\
 #UTILITIES
